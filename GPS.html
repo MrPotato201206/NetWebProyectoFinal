@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página en la pestaña del navegador -->
+    <title>Menú de Barra Lateral</title>
+    
+    <!-- Enlaces a archivos de estilos -->
+    <link rel="stylesheet" href="GPS.css">
+    <!-- Fuente de Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Encabezado del sitio -->
+    <h1 class="titulo">NetWeb<span class="material-symbols-outlined">shopping_cart</span></h1>
+</head>
+<body>
+    <!-- Barra de menú -->
+    <div class="menu">
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <!-- Lista de opciones de navegación -->
+        <div class="opciones">
+            <a href="index.html">Inicio</a>
+            <a href="GPS.html">GPS</a>
+            <a href="Empresa.html">Empresa</a>
+            <a href="Políticas.html" >Políticas</a>
+            <a href="Planes.html">Planes</a>
+            <a href="Contáctanos.html">Contáctanos</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la página de GPS -->
+    <div class="container">
+        <div class="clock">
+            <h1 id="time"></h1>
+            <h2 id="date"></h2>
+        </div>
+        <div class="gps">
+            <h1>Nuestras Circursales<span class="material-symbols-outlined">add_business</span><span class="material-symbols-outlined">shopping_bag</span></h1>
+        </div>
+        <!-- Información y mapa de la primera ubicación -->
+        <div class="map-container">
+            <div class="map-info">
+                <div class="location">
+                    <h3> Metro Norte, Guatemala</h3>
+                </div>
+                <div class="details">
+                    <p>Horario: Lunes a viernes de 8:00 a 18:00</p>
+                    <p>Ubicación: Calle 10, Zona 5, Metro Norte</p>
+                    <p>Teléfono: +502 2328-0065</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.1651623143152!2d-90.47596209999999!3d14.646564199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a29082f8dbb5%3A0xf9809cbc4a9ee5c9!2sIntelaf!5e0!3m2!1ses!2sgt!4v1695837898138!5m2!1ses!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- Información y mapa de la segunda ubicación -->
+        <div class="map-container">
+            <div class="map-info">
+                <div class="location">
+                    <h3>Villa nueva, Santa Clara</h3>
+                </div>
+                <div class="details">
+                    <p>Horario: Lunes a viernes de 9:00 a 19:00</p>
+                    <p>Ubicación: Guatemala City, Guatemala</p>
+                    <p>Teléfono: +502 1 2345 6789</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15448.364745398721!2d-90.6041444!3d14.5367765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a76354fad727%3A0x7b1134470c158c40!2sIntelaf!5e0!3m2!1ses!2sgt!4v1695838138109!5m2!1ses!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <br><br>
+    <footer>
+        <center>    
+            <!-- Dividimos el footer en 5 columnas usando la etiqueta div y la propiedad CSS 'display: inline-block' -->
+            <div style="width: 20%; display: inline-block;">
+                <img width="50" height="50" src="https://lehnsen.edu.gt/wp-content/uploads/2023/03/cropped-Logo-CL-e1677779589284.png" alt="Logo colegio">
+            </div>
+            <div style="width: 20%; display: inline-block;">
+                Angel Roberto <br> Hernández Hernández
+            </div>
+            <div style="width: 20%; display: inline-block;">
+                4to Bachillerato <br> en computación
+            </div>
+            <div style="width: 20%; display: inline-block;">
+                Tutor: <br> Nahin Moran
+            </div>
+        </center>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Estilos para las tarjetas */
+.card {
+    /* Alinea el contenido a la izquierda */
+    justify-content: left;
+    position: relative;
+    display: table-cell;
+    width: 300px; /* Ancho de la tarjeta */
+    height: 300px; /* Altura de la tarjeta */
+    padding: 50px 150px 50px 50px; /* Espaciado interno */
+    margin: auto; /* Centra la tarjeta horizontalmente */
+}
+
+.card .face {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    backface-visibility: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+    transition: .5s; /* Transición de animación */
+}
+
+/* Estilos para el frente de la tarjeta */
+.card .front {
+    transition: perspective(600px) rotateY(0deg); /* Animación de rotación */
+    box-shadow: 0 5px 10px #000; /* Sombra */
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(https://th.bing.com/th/id/OIP.y6FYm-nwdFZh-8fteujbAgHaHa?pid=ImgDet&rs=1); /* Fondo de la imagen */
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+/* Estilos para la parte posterior de la tarjeta */
+.card .back {
+    transform: perspective(600px) rotateY(180deg); /* Animación de rotación */
+    background: rgb(3, 35, 54); /* Color de fondo */
+    padding: 15px;
+    color: #f3f3f3; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000; /* Sombra */
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3; /* Color del enlace */
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* Estilos para el título */
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    background-color: #add8e6; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Estilos para el menú lateral */
+.menu {
+    background-color: #333; /* Color de fondo */
+    width: 50px; /* Ancho del menú */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.5s ease-in-out; /* Transición de animación */
+    overflow: hidden;
+}
+
+.menu:hover {
+    width: 200px; /* Ancho expandido del menú al pasar el ratón */
+}
+
+/* Estilos para las barras del menú */
+.barra {
+    background-color: #fff; /* Color de las barras */
+    width: 20px; /* Ancho de las barras */
+    height: 3px; /* Altura de las barras */
+    margin: 4px 0; /* Espaciado entre las barras */
+}
+
+/* Estilos para las opciones del menú */
+.opciones {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+.menu:hover .opciones {
+    display: block;
+}
+
+.opciones a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #eee; /* Borde del enlace */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    background-color: #eee; /* Color de fondo al pasar el ratón */
+    color: #333; /* Color del texto al pasar el ratón */
+}
+
+.menu {
+    z-index: 1; /* Capa z para el menú */
+}
+
+.img-con-margen {
+    margin-left: 20px;
+}
+
+/* Estilos para el pie de página */
+footer  {
+    padding: 10px;
+    border-top: 1px solid #ddd; /* Borde superior */
+    text-align: center;
+    background-color: #add8e6; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 14px;
+    align-self: flex-end;
+}

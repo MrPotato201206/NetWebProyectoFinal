@@ -1,0 +1,137 @@
+/* Estilo para el título */
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    background-color: #add8e6; /* Fondo azul claro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Estilo para el menú lateral */
+.menu {
+    background-color: #333; /* Fondo oscuro */
+    width: 50px; /* Ancho inicial */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.5s ease-in-out; /* Animación de transición */
+    overflow: hidden;
+}
+
+.menu:hover {
+    width: 200px; /* Ancho al hacer hover */
+}
+
+.barra {
+    background-color: #fff; /* Color de las barras del menú */
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+}
+
+/* Opciones del menú */
+.opciones {
+    display: none; /* Inicialmente oculto */
+    text-align: center;
+    width: 100%;
+}
+
+.menu:hover .opciones {
+    display: block; /* Mostrar al hacer hover en el menú */
+}
+
+.opciones a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #eee;
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    background-color: #eee; /* Fondo al hacer hover */
+    color: #333; /* Texto oscuro al hacer hover */
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    background-image: url("https://th.bing.com/th/id/R.a2f259bd449a721ec34886006ea37399?rik=m0ZU6suFYnOvFw&riu=http%3a%2f%2fwww.fondox.net%2fwallpapers%2ffotografia-hdr-de-edificios-3178.jpg&ehk=gh49JalOaQG%2f8Wgsk2XxCGeA3ciCbxxujuebxzEwbVQ%3d&risl=&pid=ImgRaw&r=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    background-color:#add8e6; /* Fondo azul claro */
+    color:#000000; /* Texto negro */
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* Estilos para encabezados de nivel 1 */
+h1 {
+    text-align: center;
+    color: #333333; /* Texto oscuro */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para secciones */
+.sectiontabla {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para subtítulos de sección */
+.section h2 {
+    color: #444444; /* Texto gris oscuro */
+    border-bottom: 1px solid #cccccc; /* Línea inferior */
+    padding-bottom: 10px;
+}
+
+/* Estilos para párrafos en secciones */
+.section p {
+    color: #666666; /* Texto gris medio */
+    line-height: 1.5;
+}
+
+/* Estilos adicionales */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section h2 {
+    width: fit-content; /* Ancho del subtítulo según contenido */
+}
+
+.section p, .section ul {
+    width: 70%; /* Ancho del párrafo y lista */
+}

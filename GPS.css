@@ -1,0 +1,151 @@
+/* Estilos para el título */
+.titulo {
+    font-family: 'Roboto', sans-serif; /* Fuente */
+    background-color: #add8e6; /* Fondo azul claro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 10px; /* Espaciado interno */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilos para el menú */
+.menu {
+    background-color: #333; /* Fondo oscuro */
+    width: 50px; /* Ancho inicial */
+    height: 100%; /* Altura completa */
+    position: fixed; /* Fijo en la posición */
+    top: 0; /* Arriba de la página */
+    left: 0; /* Izquierda de la página */
+    display: flex; /* Elementos en línea */
+    flex-direction: column; /* Distribución vertical */
+    align-items: center; /* Centrar elementos horizontalmente */
+    transition: width 0.5s ease-in-out; /* Transición animada en el ancho */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+/* Al pasar el ratón por encima del menú, se expande */
+.menu:hover {
+    width: 200px;
+}
+
+/* Estilos para las barras en el menú */
+.barra {
+    background-color: #fff; /* Barras blancas */
+    width: 20px; /* Ancho de las barras */
+    height: 3px; /* Altura de las barras */
+    margin: 4px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para las opciones del menú */
+.opciones {
+    display: none; /* Inicialmente oculto */
+    text-align: center; /* Texto centrado */
+    width: 100%; /* Ancho completo */
+}
+
+/* Al pasar el ratón por encima del menú, se muestran las opciones */
+.menu:hover .opciones {
+    display: block;
+}
+
+/* Estilos para los enlaces en las opciones */
+.opciones a {
+    display: block; /* Bloque de elemento */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #eee; /* Borde con color */
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Al pasar el ratón por encima de los enlaces, cambian de color */
+.opciones a:hover {
+    background-color: #eee; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+}
+
+/* (Estilos para otras secciones, comentados por brevedad) */
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Elementos en línea */
+    flex-direction: column; /* Distribución vertical */
+    align-items: center; /* Centrar elementos horizontalmente */
+}
+
+/* Estilos para el reloj */
+.clock {
+    margin-top: 20px; /* Margen superior */
+}
+
+.clock h1 {
+    font-size: 48px; /* Tamaño de fuente grande */
+}
+
+.clock h2 {
+    font-size: 24px; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para la sección de GPS */
+.gps {
+    margin-top: 20px; /* Margen superior */
+}
+
+.gps h1 {
+    font-size: 36px; /* Tamaño de fuente grande */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Fuente personalizada */
+}
+
+.gps img {
+    width: 100px; /* Ancho de la imagen */
+}
+
+/* Estilos para los contenedores de mapas */
+.map-container {
+    display: flex; /* Elementos en línea */
+    align-items: center; /* Centrar elementos verticalmente */
+    margin: 20px; /* Margen alrededor */
+}
+
+/* Estilos para la información del mapa */
+.map-info {
+    margin-right: 20px; /* Margen derecho */
+}
+
+.map-info h3 {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.map-info p {
+    font-size: 18px; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para elementos de ubicación y detalles */
+.location {
+    background-color: orange; /* Fondo naranja */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Sombra */
+    border: 2px solid black; /* Borde sólido */
+}
+
+.details {
+    background-color: yellow; /* Fondo amarillo */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Sombra */
+    border: 2px solid black; /* Borde sólido */
+}
+
+/* Estilos para el mapa incrustado */
+iframe {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Sombra */
+    border: 2px solid black; /* Borde sólido */
+}
+
+/* Estilos para el pie de página */
+footer {
+    padding: 10px; /* Espaciado interno */
+    border-top: 1px solid #ddd; /* Borde superior delgada */
+    text-align: center; /* Texto centrado */
+    background-color: #add8e6; /* Fondo azul claro */
+    color: black; /* Texto negro */
+    font-size: 14px; /* Tamaño de fuente */
+    align-self: flex-end; /* Alineación al final del contenedor */
+}
